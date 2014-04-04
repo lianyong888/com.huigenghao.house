@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>用户首页</title>
+	<!-- 插件部分 -->
+	<script type="text/javascript" src="houseui/uiscript/framework/jquery/jquery-1.6.4.min.js"></script>
+	<!-- CSS -->
+	<link type="text/css" rel="stylesheet" href="houseui/uicss/default/common/common.css" />
+	<link type="text/css" rel="stylesheet" href="houseui/uicss/default/shouye/shouye.css" />
+	<!-- JS -->
+	<script type="text/javascript" src="houseui/uiscript/default/common/common.js"></script>
+	<script type="text/javascript" src="houseui/uiscript/default/shouye/shouye.js"></script>
+	<style type="text/css">
+		/* 两列右侧自适应布局 */
+		.g-bd1{margin:0 0 10px;}
+		.g-sd1{position:relative;float:left;width:220px;margin-right:-230px;}
+		.g-mn1{float:right;width:100%;}
+		.g-mn1c{margin-left:230px;}
+	</style>
+</head>
+	<body>
+		<br/><br/><br/><br/>
+		<h1>freemarker用法示例</h1>
+		<#if columnList??>
+		<#list columnList as o>
+			数据库列名: ${o.sqlName}
+		</#list>
+		</#if>
+		<hr/>
+	
+		<div class="huigenghao_house_menu" id="huigenghao_house_menu">
+			<!-- 菜单栏-主体宽度-start -->
+			<div class="huigenghao_house_menu_main">
+				<!-- 菜单栏-会更好生活平台-start -->
+				<div class="house_menu_main_all">
+					<div class="house_menu_main_all_text">
+						会更好生活平台
+					</div>
+				</div>
+				<!-- 菜单栏-会更好生活平台-end -->
+				
+				<!-- 菜单列表-start -->
+				<ul class="house_menu_main_list">
+					<li class="house_menu_main_list_select" id="house_menu_list_shouye" onclick="changeMenuBkg(this, 'click')" onmouseover="changeMenuBkg(this, 'over')" onmouseout="changeMenuBkg(this, 'out')">
+						<a href="javascript:void(0)">
+							首页
+						</a>
+					</li>
+					<li id="house_menu_list_xinfang" onclick="changeMenuBkg(this, 'click')" onmouseover="changeMenuBkg(this, 'over')" onmouseout="changeMenuBkg(this, 'out')">
+						<a href="javascript:void(0)">
+							新 房
+						</a>
+					</li>
+					<li id="house_menu_list_ershoufang" onclick="changeMenuBkg(this, 'click')" onmouseover="changeMenuBkg(this, 'over')" onmouseout="changeMenuBkg(this, 'out')">
+						<a href="javascript:void(0)">
+							二手房
+						</a>
+					</li>
+					<li id="house_menu_list_zufang" onclick="changeMenuBkg(this, 'click')" onmouseover="changeMenuBkg(this, 'over')" onmouseout="changeMenuBkg(this, 'out')">
+						<a href="javascript:void(0)">
+							租 房
+						</a>
+					</li>
+					<li id="house_menu_list_fangchanbaike" onclick="changeMenuBkg(this, 'click')" onmouseover="changeMenuBkg(this, 'over')" onmouseout="changeMenuBkg(this, 'out')">
+						<a href="javascript:void(0)">
+							房产百科
+						</a>
+					</li>
+				</ul>
+				<!-- 菜单列表-end -->
+				
+				<!-- 我要发布信息-start -->
+				<div class="house_menu_main_right">
+					<div class="menu_main_right_one">
+						<a href="javascript:void(0)">
+							我要发布信息
+						</a>
+					</div>
+				</div>
+				<!-- 我要发布信息-end -->
+			</div>
+			<!-- 菜单栏-主体宽度-end -->
+		</div>
+		
+		
+		<div class="g-bd1 f-cb">
+		    <div class="g-sd1">
+				<div></div>
+				<ul>
+					<li>我的发布</li>
+					<li>资料管理</li>
+					<li>个人信息</li>
+					<li>转发账户</li>
+					<li>个人密码修改</li>
+					<li>账户安全</li>
+				</ul>
+		    </div>
+		    <div class="g-mn1">
+		        <div class="g-mn1c">
+		            <p>右侧自适应</p>
+		        </div>
+		    </div>
+		</div>
+	</body>
+</html>
