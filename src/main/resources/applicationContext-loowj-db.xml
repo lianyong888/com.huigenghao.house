@@ -10,9 +10,9 @@
 	<!-- 数据源定义 -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-		<property name="url" value="jdbc:mysql://118.244.179.252:3306/jx?characterEncoding=UTF-8"/>
-		<property name="username" value="loowj"/>
-		<property name="password" value="loowj"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/jx?characterEncoding=UTF-8"/>
+		<property name="username" value="root"/>
+		<property name="password" value="zouyong"/>
 	</bean>
 	
 	<!-- log4jdbc可以将数据源执行的sql将占位符?替换成字符,并以日志打印出来. log4j配置: log4j.logger.jdbc.sqltiming=INFO    详情请看: http://code.google.com/p/rapid-framework/wiki/log4jdbc
@@ -37,9 +37,9 @@
     <!-- 数据源定义 -->
 	<bean id="jx_dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-		<property name="url" value="jdbc:mysql://118.244.179.252:3306/jx?characterEncoding=UTF-8"/>
-		<property name="username" value="loowj"/>
-		<property name="password" value="loowj"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/jx?characterEncoding=UTF-8"/>
+		<property name="username" value="root"/>
+		<property name="password" value="zouyong"/>
 	</bean>
 	
 	<!-- spring 上下文获取spring对象 -->
